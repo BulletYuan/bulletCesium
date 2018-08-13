@@ -8,7 +8,7 @@ let Measure=(function(){
   function A(opt){
       opt=opt||{},
       this.handler=opt.handler||null,
-      this.mType=opt.type||0;
+      this.type=opt.type||0;
 
       this.isDraw=false,
       this.positions = [],
@@ -43,7 +43,7 @@ let Measure=(function(){
   // 测量距离模块
   A.prototype.measureDistance=function(){
       let _self=this;
-      if(_self.mType !== 0) return false;
+      if(_self.type !== 0) return false;
       _self.removeEvent();
       _self.handler.setInputAction((movement)=>{
           if(!_self.isDraw){
@@ -72,7 +72,7 @@ let Measure=(function(){
   // 测量面积模块
   A.prototype.measureSquare=function(){
       let _self=this;
-      if(_self.mType !== 1) return false;
+      if(_self.type !== 1) return false;
       _self.removeEvent();
       _self.handler.setInputAction((movement)=>{
           if(!_self.isDraw){
