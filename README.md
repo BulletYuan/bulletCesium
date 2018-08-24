@@ -11,15 +11,12 @@
 
  >使用：
 
-    ```
     let handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
     let splice=new bulletCesium.Splice({handler,radarNf,colorMap,parentDoc,VCSImageViewer:$(document).find("#cutDiv")});
     splice.init();
-    ```
 
  > 说明:
 
-    ```
     /**
     * 剖切类
     * @param {handler:Cesium.ScreenSpaceEventHandler,radarNf:Object,colorMap:Object,parentDoc:Object,VCSImageViewer:Object}
@@ -33,7 +30,10 @@
       parentDoc,
       VCSImageViewer,
     })
-    ```
+
+  > 参考:
+
+  *   [雷达处理与cesium结合](https://mikeswei.github.io/Cesium3js/examples "Cesium3d 应用")
 
 ******
 
@@ -41,16 +41,13 @@
 
  > 使用:
    
-   ```
    let handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
    let measure = bulletCesium.Measure({ handler, });
    measure.measureDistance();   //测量距离
    measure.measureSquare();     //测量面积
-   ```
 
  > 说明:
 
-    ```
     /**
     * 测量类
     * @param {handler:Cesium.ScreenSpaceEventHandler,type:Number}
@@ -61,7 +58,6 @@
       handler,
       type,
     })
-    ```
 
   > 参考:
 
