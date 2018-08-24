@@ -5,7 +5,39 @@
 
 ******
 
-## lastest - 2018.8.13 - bulletCesium-1.0.1
+## lastest - 2018.8.24 - bulletCesium-1.1.1
+
+  增加功能，雷达体扫文件剖切功能。
+
+ >使用：
+
+    ```
+    let handler = new Cesium.ScreenSpaceEventHandler(viewer.scene.canvas);
+    let splice=new bulletCesium.Splice({handler,radarNf,colorMap,parentDoc,VCSImageViewer:$(document).find("#cutDiv")});
+    splice.init();
+    ```
+
+ > 说明:
+
+    ```
+    /**
+    * 剖切类
+    * @param {handler:Cesium.ScreenSpaceEventHandler,radarNf:Object,colorMap:Object,parentDoc:Object,VCSImageViewer:Object}
+    * @description handler：获取屏幕事件句柄(必需)。radarNf：雷达体扫文件生成的data对象。colorMap：需要的色标卡对象。parentDoc：父级上下文档。VCSImageViewer：VCS图像对话框。
+    *  
+    */
+    bulletCesium.Splice({
+      handler,
+      radarNf,
+      colorMap,
+      parentDoc,
+      VCSImageViewer,
+    })
+    ```
+
+******
+
+## pro-release - 2018.8.13 - bulletCesium-1.0.1
 
  > 使用:
    
